@@ -73,7 +73,7 @@ var tooltip = d3.select("body").append("div")
     .style("opacity", 0);
 
 // load data
-d3.csv("data/df_degree_trafic_paris_subway.csv", function(error, data) {
+d3.csv("./data/df_degree_trafic_paris_subway.csv", function(error, data) {
 
   data.forEach(function(d) {
     d.trafic = +d.trafic;
