@@ -75,8 +75,6 @@ var tooltip = d3.select("body").append("div")
 // load data
 d3.csv("/data/df_degree_trafic_paris_subway.csv", function(error, data) {
 
-  if (error) throw error;
-
   data.forEach(function(d) {
     d.trafic = +d.trafic;
     d.degree = +d.degree;
