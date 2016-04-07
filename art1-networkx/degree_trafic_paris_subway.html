@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 
-<!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
+<!-- Example based on http://bl.ocks.org/weiglemc/6185069#index.html -->
 <!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
 
 <style>
@@ -48,7 +48,7 @@ var xValue = function(d) { return d.degree;}, // data -> value
     xScale = d3.scale.linear().range([0, width]), // value -> display
     xMap = function(d) { return xScale(xValue(d));}, // data -> display
     xAxis = d3.svg.axis().tickFormat(d3.format("d")).scale(xScale).orient("bottom");
-    xAxis.tickValues([0, 1, 2, 3, 4]);
+    xAxis.tickValues([0, 1, 2, 3, 4, 5]);
 
 // setup y
 var yValue = function(d) { return d.trafic;}, // data -> value
